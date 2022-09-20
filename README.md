@@ -10,6 +10,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Alan Lan
 - Jan Li
 - Jack Lin
+- Wendy Carrillo-Monarca
 
 
 ## Prerequisites  <_add anything else that applies_>

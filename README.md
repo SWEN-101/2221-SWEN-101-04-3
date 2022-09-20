@@ -8,7 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 <_each team member clones repo and then edits/replace with their name below_>
 - Frankie Jiang
 - Alan Lan
-- MEMBER03
+- Jan Li
 - MEMBER04
 
 

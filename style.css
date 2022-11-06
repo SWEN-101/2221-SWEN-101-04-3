@@ -5,7 +5,15 @@ body{
 }
 
 .header{
-    padding: 40px;
+    padding: 10px;
     background: rgb(124, 27, 27);
-    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }

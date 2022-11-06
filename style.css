@@ -3,3 +3,8 @@ body{
     background: lightgray;
     text-align: center;
 }
+
+.header{
+    padding: 20px;
+    background: maroon;
+}

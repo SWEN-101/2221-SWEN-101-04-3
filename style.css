@@ -11,7 +11,8 @@ body{
     color: rgb(235, 234, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif, Lexend;
     font-size: 20px;
-    text-align: right;
+    position: sticky;
+    
 }
 
 a {

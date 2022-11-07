@@ -1,19 +1,85 @@
 body{
     margin:0;
-    background: lightgray;
+    background: rgb(235, 234, 236);
     text-align: center;
 }
 
 .header{
-    padding: 10px;
-    background: rgb(124, 27, 27);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    padding-right: 20px;
+    background: rgb(131,68,62);
+    color: rgb(235, 234, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Lexend;
     font-size: 20px;
     text-align: right;
 }
 
 a {
-    color: white;
+    color:rgb(235, 234, 236);
     text-decoration: none;
 }
+
+a:hover{
+    color: rgb(205, 204, 206);
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(Lexend-VariableFont_wght.ttf);
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(179, 151, 149);
+    border-radius: 50%;
+}
+
+label {
+    display: inline-block;
+    font-family: 'Lexend';
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input[type='text'], input[type='password'] {
+    font-family: 'Lexend';
+    padding: 10px;
+    margin: 8px 0;
+    position:relative;
+    display: inline-block;
+}
+
+input[type='submit'] {
+    font-family: 'Lexend';
+    padding: 10px;
+    margin: 8px 0;
+    position: relative;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top:50%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .image {
+    flex-basis: 35%;
+  }
+
+  .text {
+    font-size:20px;
+  }

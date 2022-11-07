@@ -12,22 +12,27 @@
     </div>
     <main>
     
-    <div class="container">
+    <div class="container" style="position: absolute; top: 40vh">
         <div class="image">  
             <img src="logo.png" alt="Logo">
             </div>
         <div class="text">
             <p style="font-size: 30px">Login</p>
-            <div> 
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Username">
-            </div>
-        
-            <div>
-                <label for="password">Password&nbsp;</label>
-                <input type="password" id="pass" name="password" placeholder="Password">
-            </div>
-            <p style="font-size:small; font-weight:100; margin-top: 2px;text-align: right;">New? <a href="register.html" style="text-decoration: underline;">Register</a></p>
+            <form style="margin-bottom: 0px;">
+                <span> 
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </span>
+            
+                <span>
+                    <label for="password">Password&nbsp;</label>
+                    <input type="password" id="pass" name="password" placeholder="Password">
+                </span> 
+                
+                
+            </form>
+                <p style="font-size:small; font-weight:100;text-align: right; margin-top: 0px; margin-right: 2vh">New? <a href="register.html" style="text-decoration: underline;">Register</a></p>
+                
         <a href="welcome.html">
             <input type="submit" value="Sign in">
         </a>

@@ -10,7 +10,7 @@ body{
     color: rgb(235, 234, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif, Lexend;
     font-size: 22px;
-    position: sticky;
+    position: relative;
     z-index: 1;
     
 }
@@ -74,6 +74,7 @@ input[type='submit'] {
 
 img {
     max-width: 100%;
+    min-width: 200px;
 }
 
 .image {
@@ -153,7 +154,7 @@ img {
 form  { 
     display: table;
     width: 50%; 
-    min-width: 400px;    
+    min-width: 400px;   
 }
 
 form span     { 

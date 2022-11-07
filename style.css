@@ -42,14 +42,15 @@ label {
     font-family: 'Lexend';
     margin-bottom: 10px;
     position: relative;
-
+    margin-top: 1rem;
+    text-align: left;
 }
 
 input[type='text'], input[type='password'] {
     font-family: 'Lexend';
-    padding: 10px;
+    padding: 10px ;
     margin: 8px 0;
-    position:relative;
+    position: relative;
     display: inline-block;
 }
 
@@ -60,10 +61,6 @@ input[type='submit'] {
     position: relative;
 }
 
-label {
-    margin-top: 1rem;
-}
-
 .container {
     display: flex;
     align-items: center;
@@ -72,6 +69,7 @@ label {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top:50%;
+    overflow: hidden;
   }
 
 img {
@@ -150,4 +148,24 @@ img {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+form  { 
+    display: table;
+    width: 50%; 
+    min-width: 400px;    
+}
+
+form span     { 
+    display: table-row;  
+}
+
+form label { 
+    display: table-cell;
+    padding-right: 10px;
+    text-align: left;
+}
+
+ form input { 
+    display: table-cell; 
 }

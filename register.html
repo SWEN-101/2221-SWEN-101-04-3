@@ -9,37 +9,41 @@
 
     <div class = "header">
         <p style="font-family: Lexend; text-align: left; margin-left: 2vh">Health Support</p>
-        <!-- <p style="font-family: Lexend;"></p><a href="loginPage.html">Login/Register</a></p> -->
+    </div>
+    <div class="container" style="position:relative; top:100px">
+        <div class="text" style="font-size: 30px;">
+                <p>Register</p>
+        </div>
     </div>
     <main>
-    
-    <div class="container">
+
+    <div class="container" style="padding: 5px 10px; width: 40%; min-width: 400px; margin:0 auto; position: relative; top: 200px">
         <div class="text">
-            <p style="font-size: 30px; position: relative; left: 700;">Register</p>
-            <div style = "position:relative; left: 670"> 
+        <form>
+            <span> 
                 <label for="email">Email</label>
-                <input type="text" id="username" name="username" placeholder="Email">
-            </div>
+                <input type="text" id="email" name="email" placeholder="Email">
+            </span>
         
-            <div style = "position:relative; left: 648">
+            <span>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Username">
-            </div>
+            </span>
 
-            <div style = "position:relative; left: 651">
+            <span>
                 <label for="password">Password</label>
                 <input type="password" id="pass" name="password" placeholder="Password">
-            </div>
+            </span>
 
-            <div style = "position:relative; left: 609">
-                <label for="password">Confirm Password</label>
-                <input type="password" id="pass" name="password" placeholder="Confirm Password">
-            </div>
-            
-        <a style = "position:relative; left: 690" href="welcome.html">
-            <input type="submit" value="Register">
-        </a>
-            </div>
+            <span>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPass" name="confirmPassword" placeholder="Confirm Password">
+            </span>
+            </form>
+            <a href="welcome.html" style = "text-decoration: none;">
+                <input type="submit" value="Register">
+            </a>
+        </div>
     </div>
     </main>
 </body>

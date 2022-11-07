@@ -26,6 +26,7 @@ a:hover{
 @font-face {
     font-family: Lexend;
     src: url(Lexend-VariableFont_wght.ttf);
+    
 }
 
 .icon {
@@ -81,5 +82,35 @@ img {
 
 .text {
     font-size:20px;
+    color:#434343;
     font-family: Lexend;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;  
+    background-color: #f2f2f2;
+    padding:5px;
+    position: relative;
+}
+
+.scrollmenu a {
+    display:inline-block;
+    text-align: center;
+    padding:20px;
+    text-decoration:none;
+    font-family: Lexend;
+    font-size: 10px;
+    
+}
+
+.scrollmenu img{
+    object-fit: contain;
+    width:100px;
+    height: 100px;
+    max-height:15%;
+}
+
+.scrollmenu a:hover {
+    background-color: #d4cccc;
 }

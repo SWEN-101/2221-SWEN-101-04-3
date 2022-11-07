@@ -1,27 +1,27 @@
 body{
     margin:0;
-    background: rgb(235, 234, 236);
+    background: rgb(238, 238, 238);
     text-align: center;
 }
 
 .header{
-    padding: 5px;
-    padding-right: 20px;
+    padding: 1px 10px;
     background: rgb(131,68,62);
     color: rgb(235, 234, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif, Lexend;
-    font-size: 20px;
+    font-size: 22px;
     position: sticky;
+    z-index: 1;
     
 }
 
 a {
-    color:#434343;
-    text-decoration: underline;
+    font-family: 'Lexend';
+    color: inherit;
 }
 
 a:hover{
-    color: #85beec;
+    color: #7d7d7d;
 }
 
 @font-face {
@@ -90,7 +90,7 @@ img {
 .scrollmenu {
     overflow: auto;
     white-space: nowrap;  
-    background-color: #f2f2f2;
+    background-color: #fbf9f9;
     padding:5px;
     position: relative;
 }
@@ -114,4 +114,39 @@ img {
 
 .scrollmenu a:hover {
     background-color: #d4cccc;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: left;
+}
+
+.sidenav a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color:rgb(174, 176, 167);
+}
+
+.sidenav a:hover {
+    color: #6a6a6a;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

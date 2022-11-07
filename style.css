@@ -169,3 +169,19 @@ form label {
  form input { 
     display: table-cell; 
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1000px;
+}
+.grid-container div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }

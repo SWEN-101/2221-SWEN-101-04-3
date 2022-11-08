@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class = "header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding-right: 8px;">&times;</a>
+            <a href="welcome.html">Home</a>
+            <a href="todaysCalories.html">Today's Calories</a>
+            <a href="todaysExercise.html">Today's Exercise</a>
+            <a href="currentDiet.html">Current Diet</a>
+            <a href="findFoods.html">Find Foods</a>
+            <a href="suggestions.html">Suggestions</a>
+            <a href="weeklyReport.html">Weekly Report</a>
+            <p style="text-align: center"><a href="importExport.html">Import/Export Routine</a></p>
+        </div>
+        <p style="text-align: left">
+            <span style="font-family: Lexend; text-align: left; cursor:pointer" onclick="openNav()">&#9776; Health Support</span>
+            <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "40vh";
+                    }
+    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            <span style="float:right; margin-right:2vh; color: rgb(235, 234, 236)">
+                    <a href = 'account.html' style="text-decoration:none">Account</a>
+                </span>
+        </p>
+    </div>
+    <div class="container" style="position:relative; top:100px">
+        <div class="text" style="font-size: 35px;">
+                <p>Account</p>
+        </div>
+    </div>
+    <main>
+
+        <div class="container" style="padding: 5px 10px; width: 40%; min-width: 400px; margin:0 auto; position: relative; top: 200px">
+            <div class="text" style="font-size: 25px;">
+            <form>
+                <span> 
+                    <label for="name">Name:</label>
+                    <label for="name" Style = "text-align: right;">John Doe</label>
+                    
+                </span>
+            
+                <span>
+                    <label for="email">Email:</label>
+                    <label for="email" Style = "text-align: right;">jd000@hotmail.com</label>
+                </span>
+    
+                <span>
+                    <label for="password">Password:</label>
+                    <label for="password" Style = "text-align: right;">********</label>
+                </span>
+    
+                <span>
+                    <label for="birthday">Birthday:</label>
+                    <label for="birthday" Style = "text-align: right;">1/1/1999</label>
+                </span>
+                </form>
+                <a href="login.html" style = "text-decoration: none;">
+                    <input type="submit" value="Logout">
+                </a>
+                <a href="" style = "text-decoration: none;">
+                    <input type="submit" value="Edit Information">
+                </a>
+            </div>
+        </div>
+        </main>
+</body>
+</html>

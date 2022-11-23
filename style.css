@@ -187,3 +187,23 @@ form label {
     padding: 20px 0;
     font-size: 30px;
   }
+
+.pie-chart {
+    justify-self: center;
+    aspect-ratio: 1 / 1;
+    margin: 5px 5px;
+    width: 15vh;
+    background-image: conic-gradient(
+        rgb(230, 180, 188) 70deg, 
+        rgb(199, 220, 226) 0 235deg, 
+        rgb(241, 210, 152) 0);
+    border-radius: 50%;
+}
+
+.report-box {
+    justify-self: center;
+    height: 5vh;
+    width: 15vh;
+    background-color: #d2caca;
+    display: flex;
+}

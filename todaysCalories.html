@@ -1,9 +1,16 @@
 <html lang="en">
+<style>
+    table, th, td {
+    border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Today's Calories</title>
 </head>
 <body>
 <div class = "header">
@@ -37,23 +44,67 @@
     <div class= 'text'>
         <!-- insert top line text here -->
         <p style="font-size: 30px">Today's Calories</p>
+        <p id="tcalories" style="font-size: 30px; padding: 0%;">0</p>
 
 
     </div>
     <div class="text" style="background-color:#fbf9f9; padding: 0.5%; border-top:.2vh solid #868686;">
-        <p ></p>
+        <label for="fname">FOOD NAME</label>
+        <input type="text" name="fname" id="fname">
+        <label for="calories">CALORIES</label>
+        <input type="number" name="calories" id="calories">
+        <input type="button" name="button" id="btn" value="Add" onclick="AddRow()">
+
+        <table id="show">
+
+            <tr>
+                <th>Food Name</th>
+                <th>Calories</th>
+            </tr>
+
+        </table>
     </div>
-    <div class="scrollmenu" style="border-bottom:.2vh solid #868686;">
-
-    </div>
-    <div class="container">
 
 
-    </div>
-</div>
-<div class="container">
 
 
-</div>
+    <script>
+
+		var list1 = [];
+		var list2 = [];
+
+
+		var n = 1;
+		var x = 0;
+		var calories = 0;
+
+		function AddRow(){
+
+			var AddRow = document.getElementById('show');
+			var NewRow = AddRow.insertRow(n);
+
+			list1[x] = document.getElementById("fname").value;
+			list2[x] = document.getElementById("calories").value;
+			calories += parseInt(document.getElementById("calories").value);
+			document.getElementById("tcalories").innerHTML = calories;
+
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+
+
+			cel1.innerHTML = list1[x];
+			cel2.innerHTML = list2[x];
+
+
+			n++;
+			x++;
+		}
+
+	</script>
+
+
+
+
 </body>
 </html>

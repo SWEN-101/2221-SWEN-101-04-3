@@ -208,3 +208,15 @@ form label {
     width: 80%;
     background-color: #d2caca;
 }
+
+.counter-container {
+    display: inline-block;
+    background-color:#fbf9f9; 
+    padding: 0.5%; 
+    border:.2vh solid #868686; 
+    max-width: 1000; width: 75%; 
+    min-width: 400px; 
+    position: relative; 
+    padding: 20px;
+    
+}

@@ -34,6 +34,8 @@
             </span>
         </p>
     </div>
+
+
     <main>
         <div class= 'text'>
             <!-- insert top line text here -->
@@ -42,26 +44,72 @@
             
             
         </div>
-        
-        <div class="container" style="position: absolute; top: 20vh; left: 75vh">
-            <div class="text" style="text-align:center">
-                <form style="margin-bottom: 0px;">
-
-                    <span> 
-                        <label for="search">Search</label>
-                        <input type="text" id="search" name="search" placeholder="Search">
-                    </span>
-                    
-                    
-                </form>
-                </div>
-                <a href="findFoodsSearched.html">
-                    <input type="submit" value="Search">
-                </a>
-
+                <div style="display: inline-flex; width: 75%; max-width: 1000px; min-width: 450px">
+                    <input type="text" id="search" name="search" placeholder="Search for foods" style="height: 40px; display: inline-block;"/>
+                    <button value=" Search " onclick="generateSearch()" style="height: 40px; width: 75px;">Search</button>
+           </div>
         </div>
 
-    </main>
+        <div class="results" id="searchFound" style="display: none;">
+            <p class="text" id="foodName" style="padding-bottom: 0; margin-bottom: 0; font-size: 30px">foodname</p>
+            <div class="grid-container" style="grid-template-columns: 50% 50%; padding-top: 0; margin-top: 0">
+                <div class="text" style="text-align:right; font-size: 20px;">
+                    <p>Calories:</p>
+                    <p>Nutrients:</p>
+                </div>
+                <div class="text" style="text-align:left; font-size: 20px;">
+                    <p id="calories">180 Kcal</p>
+                    <p id="nutrients">10g Protein, </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="results" id="noResults" style="display: none">
+            <p class="text">No results found!</p>
+        </div>
+
+    <script>
+        var input = document.getElementById("search");
+
+        var appleList = ["95 Kcal", "1g Protein", "25g Carbs", "19g Sugar"];
+        var orangeList = ["66 Kcal", "1.3g Protein", "14.8 Carbs", "12g Sugar"];
+        
+        function generateSearch() {
+            document.getElementById("noResults").style.display = "none";
+            document.getElementById("searchFound").style.display = "none";
+            if(document.getElementById("search").value.includes("apple")) {
+                document.getElementById("searchFound").style.display = "inline-block";
+                document.getElementById("foodName").innerHTML = "Apple";
+                document.getElementById("calories").innerHTML = appleList[0];
+                var info = "";
+                for(let i = 1 ; i < appleList.length; i++) {
+                    info += appleList[i] + "<br>";
+                }
+                document.getElementById("nutrients").innerHTML = info;
+            }
+            else if(document.getElementById("search").value.includes("orange")) {
+                document.getElementById("searchFound").style.display = "inline-block";
+                document.getElementById("foodName").innerHTML = "Orange";
+                document.getElementById("calories").innerHTML = orangeList[0];
+                var info = "";
+                for(let i = 1 ; i < orangeList.length; i++) {
+                    info += orangeList[i] + "<br>";
+                }
+                document.getElementById("nutrients").innerHTML = info;
+            }
+            else {
+                document.getElementById("noResults").style.display = "inline-block";
+
+            }
+
+        }
+            input.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    generateSearch();
+                }
+            });
+        
+    </script>
 
 </body>
 </html>
